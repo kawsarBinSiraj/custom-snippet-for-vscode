@@ -1,9 +1,9 @@
 {
-	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
-	"Comment Format For Javascript Method": {
+	"Comment Format For Method": {
 		"prefix": "cmt",
 		"body": [
 			"/**",
@@ -15,26 +15,48 @@
 			" * created_by:- Kawsar Bin Siraj",
 			" * created_at:- $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
 			" * description :- A method is simply a “chunk” of code.",
-			" */",
+			" */"
 		],
-		"description": "Comment Format For Javascript Method"
+		"description": "Comment Format For Method"
 	},
 	"Single Line Comment Format": {
 		"prefix": "slcmt",
-		"body": [
-			"/* lorem ipsum$1 */",
-		],
+		"body": ["/* lorem ipsum$1 */"],
 		"description": "Single Line Comment Format"
 	},
 	"Multiline Comment Format": {
 		"prefix": "mlcmt",
-		"body": [
-			"/**",
-			" * description :- $1",
-			" * created_at:- $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
-			" */",
-		],
+		"body": ["/**", " * description :- $1", " * created_at:- $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND", " */"],
 		"description": "Multiline Comment Format"
 	},
-
+	"Get Data From Server": {
+		"prefix": "gts",
+		"body": [
+			"const getFromServer$1 = async () => {",
+			"    try {",
+			"        const response = await axios.get(`/user?ID=12345`);",
+			"        console.log(response)",
+			"    } catch (error) {",
+			"      console.error(error);",
+			"    }",
+			"};"
+		],
+		"description": "Get Data From Server"
+	},
+	"Send To Server": {
+		"prefix": "sts",
+		"body": [
+			"const sendToServer$1 = async () => {",
+			"    try {",
+			"        let body = SON.stringify({})",
+			"        const response = await axios.post(`/user`, body);",
+			"        console.log(response)",
+			"    } catch (error) {",
+			"      console.error(error);",
+			"    }",
+			"};"
+		],
+		"description": "Send To Server"
+	}
 }
+
