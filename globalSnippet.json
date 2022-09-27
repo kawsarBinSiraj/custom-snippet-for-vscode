@@ -47,7 +47,7 @@
 		"body": [
 			"const sendToServer$1 = async () => {",
 			"    try {",
-			"        let body = SON.stringify({})",
+			"        let body = JSON.stringify({})",
 			"        const response = await axios.post(`/user`, body);",
 			"        console.log(response)",
 			"    } catch (error) {",
