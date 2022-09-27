@@ -7,9 +7,8 @@
 		"prefix": "cmt",
 		"body": [
 			"/**",
-			" * @method_name :- method_name$1",
-			" * -------------------------------------------------------- ",
-			" * @param  :-  {{}|any}",
+			" * @method :- method_name$1",
+			" * @arguments  :-  {{}|any}",
 			" * ?return :-  {{}|any}",
 			" * author :-  {{}|null}",
 			" * created_by:- Kawsar Bin Siraj",
